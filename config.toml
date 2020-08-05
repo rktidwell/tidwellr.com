@@ -1,0 +1,16 @@
+title = "Home"
+baseURL = "http://tidwellr.io/"
+languageCode = "en-us"
+copyright = "Ryan Tidwell"
+theme = "gohugo-theme-ananke-2.6.2"
+
+SectionPagesMenu = "main"
+DefaultContentLanguage = "en"
+Paginate = 10
+
+[params]
+  favicon = "images/favicon.png"
+  featured_image = "images/IMG_0624_bw.jpeg"
+  twitter = "https://twitter.com/rktidwell85"
+  github = "https://github.com/rktidwell"
+  background_color_class = "bg-green"
