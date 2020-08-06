@@ -1,5 +1,5 @@
 title = "Home"
-baseURL = "http://tidwellr.com/"
+baseURL = "https://tidwellr.com/"
 languageCode = "en-us"
 copyright = "Ryan Tidwell"
 theme = "gohugo-theme-ananke-2.6.2"
