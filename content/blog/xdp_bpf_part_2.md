@@ -97,7 +97,7 @@ int  handle_lan_xdp(struct xdp_md *ctx) {
 
 I'm still learning my way around XDP/BPF. There may be other ways to look up the MAC address of the ingress adapter that I'm not aware of. This is how I solved the problem, but if someone knows of a more elegant way I would love to hear about it.
 
-Remember how a good ethernet citizen ignores frames with a destination MAC address that doesn't belong to them? Now that we have the MAC addresses from the incoming from and the ingress adapter, we can begin to perform some basic filtering! Let's drop any frames not directed at our router.
+Remember how a good ethernet citizen ignores frames with a destination MAC address that doesn't belong to them? Now that we have the MAC addresses from the incoming packet and the ingress adapter, we can begin to perform some basic filtering! Let's drop any frames not directed at our router.
 
 ```c
 /* SPDX-License-Identifier: Apache-2.0 */
