@@ -26,7 +26,7 @@ I'm taking on the challenge of building an XDP router that I can use for my home
 ### Basic Firewall
 {{< figure src="/images/XDP_BPF/TCP_drop.png" title="" >}}
 
-I figured the best way to begin iterating on this project was to start with code performs basic routing. It's important to keep in mind how a router handles a packet that it receives on any of its interfaces. I'm going to start with some basic routing 101, then show this is implemented with XDP.
+I figured the best way to begin iterating on this project was to start with code performs basic routing. It's important to keep in mind how a router handles a packet that it receives on any of its interfaces. I'm going to start with some basic routing 101, then show how this is implemented with XDP.
 
 ## Routing 101
 
