@@ -95,7 +95,7 @@ int  handle_lan_xdp(struct xdp_md *ctx) {
   bpf_printk("Ingress Interface MAC: %u", (__u64)(ingress_fib_params.smac));
 ```
 
-I'm still learning my around XDP/BPF. There may be other ways to look up the MAC address of the ingress adapter that I'm not aware of. This is how I solved the problem, but if someone knows of a more elegant way I would love to hear about it.
+I'm still learning my way around XDP/BPF. There may be other ways to look up the MAC address of the ingress adapter that I'm not aware of. This is how I solved the problem, but if someone knows of a more elegant way I would love to hear about it.
 
 Remember how a good ethernet citizen ignores frames with a destination MAC address that doesn't belong to them? Now that we have the MAC addresses from the incoming from and the ingress adapter, we can begin to perform some basic filtering! Let's drop any frames not directed at our router.
 
